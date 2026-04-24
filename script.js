@@ -1,7 +1,10 @@
 console.log("Portfolio loaded!");
 
-document.querySelectorAll(".project-card").forEach(card => {
-    card.addEventListener("click", () => {
-        alert("Project clicked!");
+const form = document.querySelector("form");
+
+if (form) {
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        alert("Message sent!");
     });
-});
+}
