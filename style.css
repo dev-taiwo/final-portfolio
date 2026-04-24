@@ -38,6 +38,13 @@ nav a {
     margin: 10px 0;
     border-radius: 8px;
 }
+.project-card {
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
 
 /* Responsive */
 @media (min-width: 768px) {
